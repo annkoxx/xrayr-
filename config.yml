@@ -1,4 +1,4 @@
-Log:
+Log:123
   Level: warning # Log level: none, error, warning, info, debug 
   AccessPath: # /etc/XrayR/access.Log
   ErrorPath: # /etc/XrayR/error.log
