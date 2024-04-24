@@ -124,7 +124,7 @@ Nodes:
           ALICLOUD_ACCESS_KEY: aaa
           ALICLOUD_SECRET_KEY: bbb
   -
-    PanelType: "V2board" # Panel type: SSpanel, NewV2board, V2board, PMpanel, Proxypanel
+    PanelType: "NewV2board" # Panel type: SSpanel, NewV2board, V2board, PMpanel, Proxypanel
     ApiConfig:
       ApiHost: "https://api-mg.98kjc.top"
       ApiKey: "OP21swOW3Ksoe2kskePS2L5sE"
