@@ -8,11 +8,11 @@ InboundConfigPath: # /etc/XrayR/custom_inbound.json # Path to custom inbound con
 OutboundConfigPath: # /etc/XrayR/custom_outbound.json # Path to custom outbound config, check https://xtls.github.io/config/outbound.html for help
 ConnectionConfig:
   DisableSniffing: true # 禁用流量嗅探
-  Handshake: 4 # Handshake time limit, Second
-  ConnIdle: 10 # Connection idle time limit, Second
-  UplinkOnly: 2 # Time limit when the connection downstream is closed, Second
-  DownlinkOnly: 4 # Time limit when the connection is closed after the uplink is closed, Second
-  BufferSize: 32 # The internal cache size of each connection, kB
+  Handshake: 5 # Handshake time limit, Second
+  ConnIdle: 20 # Connection idle time limit, Second
+  UplinkOnly: 4 # Time limit when the connection downstream is closed, Second
+  DownlinkOnly: 6 # Time limit when the connection is closed after the uplink is closed, Second
+  BufferSize: 128 # The internal cache size of each connection, kB
 Nodes:
   - PanelType: "NewV2board" # Panel type: SSpanel, NewV2board, PMpanel, Proxypanel, V2RaySocks, GoV2Panel, BunPanel
     ApiConfig:
