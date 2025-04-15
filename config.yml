@@ -12,7 +12,7 @@ ConnectionConfig:
   ConnIdle: 20 # Connection idle time limit, Second
   UplinkOnly: 4 # Time limit when the connection downstream is closed, Second
   DownlinkOnly: 6 # Time limit when the connection is closed after the uplink is closed, Second
-  BufferSize: 128 # The internal cache size of each connection, kB
+  BufferSize: 64 # The internal cache size of each connection, kB
 Nodes:
   - PanelType: "NewV2board" # Panel type: SSpanel, NewV2board, PMpanel, Proxypanel, V2RaySocks, GoV2Panel, BunPanel
     ApiConfig:
@@ -31,15 +31,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 500 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 10 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
@@ -98,15 +98,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 500 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 10 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
@@ -165,15 +165,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 500 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 10 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
@@ -232,15 +232,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 500 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 10 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
