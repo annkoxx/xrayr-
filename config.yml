@@ -23,7 +23,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: /etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -36,9 +36,9 @@ Nodes:
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 315 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
         LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
@@ -90,7 +90,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: /etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -103,9 +103,9 @@ Nodes:
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 315 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
         LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
@@ -157,7 +157,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: /etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -170,9 +170,9 @@ Nodes:
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 315 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
         LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
@@ -224,7 +224,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: #/etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -237,9 +237,9 @@ Nodes:
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 315 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 100 # The speedlimit of a limited user (unit: mbps)
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
         LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
@@ -291,7 +291,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 30 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: /etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -299,15 +299,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 3 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
-        WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
@@ -358,7 +358,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 30 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: /etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -366,15 +366,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 3 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
-        WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
@@ -425,7 +425,7 @@ Nodes:
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       VlessFlow: "xtls-rprx-vision" # Only support vless
-      SpeedLimit: 30 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 35
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: /etc/XrayR/rulelist
       DisableCustomConfig: false # disable custom config for sspanel
@@ -433,15 +433,15 @@ Nodes:
       DisableSniffing: true # 禁用流量嗅探
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 3 # Time to update the nodeinfo, how many sec.
+      UpdatePeriodic: 5 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
-        Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
-        WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
-        LimitSpeed: 0 # The speedlimit of a limited user (unit: mbps)
-        LimitDuration: 0 # How many minutes will the limiting last (unit: minute)
+        Limit: 100 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
+        WarnTimes: 2 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
+        LimitSpeed: 30 # The speedlimit of a limited user (unit: mbps)
+        LimitDuration: 15 # How many minutes will the limiting last (unit: minute)
       GlobalDeviceLimitConfig:
         Enable: false # Enable the global device limit of a user
         RedisNetwork: tcp # Redis protocol, tcp or unix
